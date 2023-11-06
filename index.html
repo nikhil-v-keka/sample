@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        form{
+            width: 300;
+        }
+        select {
+            width:100px
+        }
+        form div{
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <img src="calc.jfif" alt="" width="300" height="400">
+    <form >
+        <div>
+            <label for="">Input 1</label>
+            <input type = "number" name = "num1" />
+        </div>
+        <div>
+            <label for="num2">Input 2</label>
+            <input type = "number" name = "num2" />
+        </div>
+        <div>
+            <label for="cars">Select opeartion</label>
+            <select name="cars" id="cars">
+                <option value="none" selected disabled hidden>Select an Option</option>
+                <option value="+">ADD</option>
+                <option value="-">SUBTRACT</option>
+                <option value="*">MULTIPLY</option>
+                <option value="/">DIVIDE</option>
+            </select>
+        </div>
+        <div class="images">
+            <img src="calc.jfif" width="80" height="80">
+            <img src="calc.jfif" width="80" height="80">
+        </div>
+     </form>
+</body>
+</html>
