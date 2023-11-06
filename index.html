@@ -15,34 +15,60 @@
             display: flex;
             justify-content: space-around;
         }
+        tr td:first-child{
+            width: 40%;
+        }
     </style>
 </head>
 <body>
-    <h1>Calculator</h1>
+    <center>
+        <div>
+            <font color="blue" size="7">Calculator</font>
+        </div>
+    
     <img src="calc.jfif" alt="" width="300" height="400">
+    <table>
     <form >
-        <div>
-            <label for="">Input 1</label>
-            <input type = "number" name = "num1" />
-        </div>
-        <div>
-            <label for="num2">Input 2</label>
-            <input type = "number" name = "num2" />
-        </div>
-        <div>
-            <label for="cars">Select opeartion</label>
-            <select name="cars" id="cars">
-                <option value="none" selected disabled hidden>Select an Option</option>
-                <option value="+">ADD</option>
-                <option value="-">SUBTRACT</option>
-                <option value="*">MULTIPLY</option>
-                <option value="/">DIVIDE</option>
-            </select>
-        </div>
-        <div class="images">
-            <img src="calc.jfif" width="80" height="80">
-            <img src="calc.jfif" width="80" height="80">
-        </div>
+            <tr>
+                <td>
+                    <label for="">Input 1</label>
+                </td>
+                <td>
+                    <input type = "number" name = "num1" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Input 2</label>
+                </td>
+                <td>
+                    <input type = "number" name = "num2" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="operation">Select operation</label>
+                </td>
+                <td>
+                    <select name="operation" id="cars">
+                        <option value="none" selected disabled hidden>Select an Option</option>
+                        <option value="+">ADD</option>
+                        <option value="-">SUBTRACT</option>
+                        <option value="*">MULTIPLY</option>
+                        <option value="/">DIVIDE</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="calc.jfif" width="80" height="80">
+                </td>
+                <td>
+                    <img src="calc.jfif" width="80" height="80">
+                </td>
+            </tr>
      </form>
+    </table>
+    </center>
 </body>
 </html>
